@@ -1,0 +1,459 @@
+
+/* Header */
+
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    background-color:rgb(58, 56, 56);
+    color: white;
+}
+
+.btnmenuu{
+    height: 30px;
+    width: 30px;
+}
+
+.btn_menu {
+        color: white;
+        padding: 0px;
+    }
+
+.btn_menu a{
+        color: white;
+        text-decoration: none;
+    }
+
+.btn_menu :hover {
+        background-color: rgb(90, 90, 90);
+        transition: all 0.4s;
+        border-radius: 5px;
+    }
+
+.menu {
+        border-bottom: 4px solid gray;
+        width: 100%;
+        display: flex;
+        background-color: gray; 
+    }
+
+ul.navigation {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+        flex-direction: column;
+    }
+ul.navigation.show {
+        display: flex;
+    }
+ul.navigation li {
+        list-style: none;
+        margin: 0px 0px;
+        padding: 15px 20px;
+    }
+ul.navigation li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+ul.navigation li:hover {
+        background-color: gray;
+    }
+
+
+/* main */
+   
+body {
+    background-color:rgb(26, 25, 25);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header {grid-area: header;}
+.main { grid-area: section;}
+.footer {grid-area: footer;}
+.pelicula{
+    display: flex;
+    flex-direction: column;
+    margin-left:  30%;
+}
+.FotoPelicula {
+    width: 140px; 
+    height: 220px;
+    padding: 2%;
+}    
+
+
+.categorias a{
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+}
+.categorias.a :hover{
+    background-color: rgb(90, 90, 90);
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+
+/*  tabla  */
+th {
+    background-color: rgb(56, 55, 55);
+    color: white
+}
+tbody {
+    color: rgb(37, 37, 37);
+}
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+    color: white;
+}
+.ttabla{
+    color: white
+}
+
+/* lista de peliculas mas vistas */
+
+.listas-index {
+display: block;
+}
+.listapeli {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.listapeli :hover {
+    background-color: rgb(90, 90, 90);
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+.lista-peliculas{
+    color: white
+}
+/*feedback*/
+.pruebfeed{
+    color: white
+}
+#ComentarioFeedback{
+    color: white;
+}
+/*body paginas*/
+.bodypaginas{
+    color: white
+}
+.videopeliculass{
+    width:300px; 
+    height:160px;
+}
+.Phtml{
+    color: white;
+}
+.maintabla{
+        width: 85%;
+        max-width: 850px;
+        margin: 0 auto;
+        padding-top: 8rem;
+}
+.foot {
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    margin-top: 20px;
+  
+}
+
+.FootIzquierda {
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 2px solid white;
+}
+.foot a { 
+    text-decoration: none;
+    color: white;
+}
+.logoabajo{
+    width: 50px;
+    height: 50px;
+}
+.mostrar{
+    display: none;
+}
+.mostrar.show{
+    display:block;    
+}
+/* CSS PC*/
+@media screen and (min-width: 900px){
+    .btn_menu {
+        display: none;
+     }
+     ul.navigation {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .FotoPelicula{
+        width: 250px;
+        height: 360px;
+    }
+    
+
+    body {
+        background-color:rgb(26, 25, 25) ;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0;
+    }
+    
+    
+    .container {
+        width: 85%;
+        max-width: 850px;
+        margin: 0 auto;
+        padding-top: 8rem;
+    }
+    
+    .header {
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    
+    }
+    
+    .FotoPelicula {
+        text-decoration: none;
+        color: black;
+    } 
+    
+    #ComentarioFeedback {
+        line-height: 2rem; 
+    }
+    
+    .EnviarFeedback {
+        margin-top: 2rem;
+        color: white;
+    }
+    .EmailUsuario {
+        margin-top: 1rem;
+    }
+    
+    #BotonEnviar {
+        background-color: rgb(122, 118, 118);
+        color: white;
+        padding: 8px;
+    }
+    
+    
+    .categorias a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    th {
+        background-color: rgb(56, 55, 55);
+        color: white
+    }
+    tbody {
+        color: rgb(37, 37, 37);
+    }
+    table, td, tr, th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+    .listapeli {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .lista-peliculas1{
+        padding-left:5px ;
+        margin:10px 5px;
+        background-color: rgb(56, 55, 55);
+
+    }
+    .lista-peliculas2{
+        padding-left:5px ;
+        margin:10px 5px;
+        background-color: rgb(56, 55, 55);
+    }
+    .lista-peliculas3{
+        padding-left:5px ;
+        margin:10px 5px;
+        background-color:rgb(56, 55, 55);
+    }
+    .listapeli :hover {
+        background-color: rgb(90, 90, 90);
+        transition: all 0.4s;
+        border-radius: 5px;
+    }
+    .listas-index {
+        font-family:Arial, Helvetica, sans-serif; 
+        color: white;
+        display: flex;
+        }
+    
+    .FotoPelicula {
+        padding-left: 0px;
+        width: 200px; 
+        height: 275px;
+    
+        }
+        
+     
+    .tablapeliculass {
+            padding-left: 4px;
+        }
+        
+    .videopeliculass { 
+            padding: 4px;
+        }
+        
+    .pelicula{
+        display: flex;
+        flex-direction: initial;
+        margin-left: 0;
+    }
+    .peliculass {
+        display: flex;
+        
+    }
+    .FotoPelicula {
+        width: 27%; 
+        
+        padding: 2%;
+    }
+    .logoabajo {
+        width: 70px; 
+        height: 75px;
+    }
+    
+    #BotonCaptcha {
+      
+        width: 60;
+        height: 20;
+    }
+    #TextoCaptcha {
+        color: white;
+        font-style:oblique;
+        width: 300px;
+        height: 40px;
+    }
+    #TextoCaptcha2 {
+      
+        width: 300px;
+        height: 40px;
+    }
+    #EscribirCaptcha {
+       
+        width: 300px;
+        height: 60px;
+    }
+    
+    .textcaptcha {
+        display: flex;
+        
+    }
+    #ResultadoCaptcha {
+      color: white;
+    }
+    
+    .Terror{
+        align-items: center;
+    }
+    .videopeliculass{
+        width:400px; 
+        height:230px;
+    }
+    .Phtml{
+        color: white;
+    }
+    .maintabla{
+            width: 85%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding-top: 8rem;
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.foot {
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.FootIzquierda {
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 2px solid white;
+}
+.foot a { 
+    text-decoration: none;
+    color: white;
+}
+.mostrar{
+    display: none;
+}
+.mostrar.show{
+    display:block;    
+}
+.inputmostrar{
+    margin: 5px;
+    margin-left: 0;
+}
+#texto{
+    color: white;
+}
+
+}
+@media screen and (min-width: 550px) and (max-width: 900px){
+
+    body{font-family: Georgia, 'Times New Roman', Times, serif;}
+    
+    .pelicula { 
+        display: flex;
+        flex-direction: initial;
+        margin-left: 0;
+        
+    }
+    .FotoPelicula {
+        width: 30%; 
+        height: 150px;
+        padding: 2%;
+    }
+}

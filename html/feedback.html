@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>  
+        <div class="logo">
+            <h1>BLOG PELICULAS</h1>
+            <div class="btn_menu">
+                <img src="imagen/BOTONESTESIGENTE.png" class="btnmenuu" alt="boton">
+
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="navigation">
+                <li><a href="index.html">INICIO</a></li>
+                    <li><a href="accion.html">ACCION</a></li>
+                    <li><a href="cienciaf.html">CIENCIA FICCION</a></li>
+                    <li><a href="comedia.html">COMEDIA</a></li>
+                    <li><a href="terror.html">TERROR</a></li>
+                    <li><a href="policial.html">POLICIAl</a></li>
+                    <li><a href="drama.html">DRAMA</a></li>
+                    <li><a href="feedback.html">OPINA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+            
+        <h1 id="ComentarioFeedback">¡Comparte con nosotros tus opiniones y sugerencias para mejorar!</h1>
+        <article class="pruebfeed">
+            <form action="">
+                <div class="DatosUsuario">
+                    <div>
+                        <label for="nombre:">Nombre:</label>  <input type="text" name="nombre" value="">
+                    </div>
+                    <div>
+                        <label for="nombre:">Apellido:</label>  <input type="text" name="apellido" value="">
+                    </div>
+                </div>
+                    
+                <div class="puntuacion">
+                    <p> En una escala del 1 al 10, ¿Cuanto recomendarías la pagina a un amigo?</p> 
+                    <input type="radio" name="puntuacion" id="" value="1"><label for="">1</label>   
+                    <input type="radio" name="puntuacion" id="" value="2"><label for="">2</label>
+                    <input type="radio" name="puntuacion" id="" value="3"><label for="">3</label>
+                    <input type="radio" name="puntuacion" id="" value="4"><label for="">4</label>
+                    <input type="radio" name="puntuacion" id="" value="5"><label for="">5</label>
+                    <input type="radio" name="puntuacion" id="" value="6"><label for="">6</label>
+                    <input type="radio" name="puntuacion" id="" value="7"><label for="">7</label>
+                    <input type="radio" name="puntuacion" id="" value="8"><label for="">8</label>
+                    <input type="radio" name="puntuacion" id="" value="9"><label for="">9</label>
+                    <input type="radio" name="puntuacion" id="" value="10"><label for="">10</label>
+                </div>
+                <div class="comentario">
+                    <p> Si quieres mandarnos un mensaje, es sencillo, escribe aquí:</p>
+                    <textarea name="escribe tu comentario" placeholder="Escribe tu opinion o sugerencia" id="" cols="30" rows="10"></textarea>
+                </div>    
+                <div class="EmailUsuario">  
+                    <p>Para poder contestarte por favor introduce tu e-mail. Sólo será usado con ese propósito</p>
+                    <input type="text" name="email" placeholder="Tu E-mail" value="">
+                </div>
+                <div class="EnviarFeedback">    
+                    <div class="textcaptcha">
+                        <h1 id="TextoCaptcha" ></h1> 
+                    </div>
+                    <div id="captcha">
+                        <input type="text" id="EscribirCaptcha" placeholder="Escriba lo que se muesta arriba" value="">    
+                        <input type="button" value="validar" id="BotonCaptcha">
+                        <h1 id="ResultadoCaptcha" ></h1>
+                    </div>    
+                </div>
+                <input type="submit" value="Enviar Datos">
+            </form>
+        </article>
+    </section>
+    <footer class="foot">
+        <div class="FootIzquierda">
+            <a id="LinkFoot" href="feedback.html">Opina sobre nosotros</a>
+        </div>
+        <div class="FootDerecha">
+            <h1>BLOG PELICULAS</h1>
+        </div>
+    </footer>>
+    <script src="js/index.js"></script>
+    <script src="js/captcha.js"></script>
+</body>
+</html>

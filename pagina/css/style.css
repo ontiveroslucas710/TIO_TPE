@@ -79,6 +79,7 @@ body {
     "main"
     "footer";
 }
+.tablaaccion{color: white;}
 
 .header {grid-area: header;}
 .main { grid-area: section;}

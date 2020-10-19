@@ -8,7 +8,8 @@
     justify-content: space-between;
     align-items:center;
     padding: 10px;
-    background-color:rgb(58, 56, 56);
+    /*background-color:rgb(58, 56, 56);*/
+    background-color: rgb(56, 55, 55);
     color: white;
 }
 

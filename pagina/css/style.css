@@ -79,6 +79,7 @@ body {
     "header"
     "main"
     "footer";
+    color: white;
 }
 .tablaaccion{color: white;}
 
@@ -228,6 +229,7 @@ display: block;
         max-width: 850px;
         margin: 0 auto;
         padding-top: 8rem;
+        color: white;
     }
     
     .header {
